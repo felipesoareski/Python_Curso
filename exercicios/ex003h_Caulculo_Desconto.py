@@ -6,5 +6,5 @@ p = promoçao /100 #valor convertido em %
 New_preço = preço - (preço * p)
 desconto = preço - New_preço
 
-print(f'o novo preço é de R${New_preço}')
+print(f'o novo preço é de R${New_preço:.2f}')
 print(f'e desconto é de R${desconto:.2f} ')
