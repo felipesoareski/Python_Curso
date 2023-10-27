@@ -8,3 +8,4 @@ kmr = 0.15
 
 c = diaria * dias + km * kmr
 print(f'O total a pagar é R${c:.2f}' )
+
