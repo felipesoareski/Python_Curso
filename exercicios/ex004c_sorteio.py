@@ -1,3 +1,5 @@
+#um professor quer sortear um de dos seus quatro alunos para apagar um quadro
+#faça um programa que ajude ele, lendo o nome deles e escrevendo o nome do escolhido
 import random
 
 # solicita o nome de cada aluno
@@ -10,10 +12,7 @@ a4 = input('digite o nome do segundo aluno: ')
 alunos = [a1, a2, a3, a4]
 
 #sorteia um indice aleatorio dentro do intervalo de 0 a 3
-nsorteado = random.randint(0,3)
-
-#obtem o nome do aluno sorteado ultilizando o indice sorteado
-sortudo = alunos[nsorteado]
+sorteado = random.choice(alunos)
 
 #exibe o nome do sorteado
-print(f'o sorteado é {sortudo}')
+print(f'o sorteado é {sorteado}')
