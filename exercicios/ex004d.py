@@ -1,14 +1,12 @@
-import random
-a1 = input('vc é: ')
-a2 = input('vc é: ')
-a3 = input('vc é: ')
-a3 = input('vc é: ')
-a4 = input('vc é: ') 
+from random import shuffle
+a1 = str(input('primeiro aluno: '))
+a2 = str(input('segundo aluno: '))
+a3 = str(input('terceiro aluno: '))
+a3 = str(input('quarto aluno: '))
+a4 = str(input('quinto aluno: '))
 
-list = [a1, a2, a3, a4]
+lista = [a1, a2, a3, a4]
 
-random.choice([list])
+shuffle(lista)
 
-print(' a ordem de entrega é : ', list)
-
-
+print('a ordem de apresentaçao será: ', lista)
