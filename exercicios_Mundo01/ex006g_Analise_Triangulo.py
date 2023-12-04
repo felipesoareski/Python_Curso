@@ -1,4 +1,4 @@
-
+#crie um programa que leia os 3 seguimentos de um triangulo e mostre se é possivel formar um triangulo
 print('\033[01;04;36m----Vamos formar um triangulo!----\033[m')
 a = float(input('Primeiro segmento '))
 b = float(input('Segundo segmento '))
