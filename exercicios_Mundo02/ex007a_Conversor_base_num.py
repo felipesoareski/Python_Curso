@@ -12,20 +12,17 @@ escolha = input('Escolha o numero da opçao desejada para conversão: ')
 
 if escolha == '1':
     n = bin(decimal)
-    base = 'BINARIO'
+    print(f'\033[1;32m{decimal}\033[m convertido para BINÁRIA é: \033[1;32m{n[2:]}\033[m')
+    
 
 elif escolha == '2':
     n = oct(decimal)
-    base = 'OCTAL'
+    print(f'\033[1;32m{decimal}\033[m convertido para OCTAL é: \033[1;32m{n[2:]}\033[m')
+       
 
 elif escolha == '3':
     n = hex(decimal)
-    base = 'HEXADECIMAL'
+    print(f'\033[1;32m{decimal}\033[m convertido para HEXADECIMAL é: \033[1;32m{n[2:]}\033[m')
+    
 else:
-    print('opçao invalida')
-
-
-
-print(f'\033[1;32m{decimal}\033[m convertido para {base} é: \033[1;32m{n[2:]}\033[m')
-
-
+    print('\033[31mOpçao invalida\033[m')
