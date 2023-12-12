@@ -17,6 +17,7 @@ elif voce == 3:
     voce = 'Tesoura'
 else:
     print('Opçao invalida, Jogue outra vez')
+    exit()
 
 
 sleep(1)

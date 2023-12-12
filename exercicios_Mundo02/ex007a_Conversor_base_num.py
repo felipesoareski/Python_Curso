@@ -1,3 +1,7 @@
+'''Escreva um programa em Python que leia um número inteiro qualquer e 
+peça para o usuário escolher qual será a base de conversão:
+ 1 para binário, 2 para octal e 3 para hexadecimal.'''
+
 decimal = int(input('Digite um numero inteiro: '))
 
 print('\033[33m----\033[m'*10)
@@ -13,16 +17,14 @@ escolha = input('Escolha o numero da opçao desejada para conversão: ')
 if escolha == '1':
     n = bin(decimal)
     print(f'\033[1;32m{decimal}\033[m convertido para BINÁRIA é: \033[1;32m{n[2:]}\033[m')
-    
-
+   
 elif escolha == '2':
     n = oct(decimal)
     print(f'\033[1;32m{decimal}\033[m convertido para OCTAL é: \033[1;32m{n[2:]}\033[m')
-       
 
 elif escolha == '3':
     n = hex(decimal)
     print(f'\033[1;32m{decimal}\033[m convertido para HEXADECIMAL é: \033[1;32m{n[2:]}\033[m')
-    
+
 else:
     print('\033[31mOpçao invalida\033[m')
