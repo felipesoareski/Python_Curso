@@ -13,17 +13,15 @@ for c in range(1,5):
     idade = int(input('IDADE: '))
     sexo = str(input('SEXO [F/M]: ')).upper()
     acumulador_idade += idade
-    if c == 1:
+    if c == 1 and sexo in 'Mm':
         maior = idade
-        menor = idade
-    else:
-        if idade > maior and sexo == 'M':
-            maior = idade
-            homemVelho = nome
-        elif sexo == 'F' and idade < 20:
-            mulheres += 1
-
-
+        homemVelho = nome
+    if sexo in 'Mm' and idade > maior:
+        maior = idade
+        homemVelho = nome
+    if sexo in 'Ff' and idade < 20:
+        mulheres += 1
+    
 
 media_idade = acumulador_idade / 4
 print('---'*6)
