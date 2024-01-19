@@ -9,9 +9,9 @@ homemVelho = ''
 mulheres = 0
 for c in range(1,5):
     print(F'----{c} PESSOA----')
-    nome = str(input('NOME: ')).capitalize()
+    nome = str(input('NOME: ')).strip().title()
     idade = int(input('IDADE: '))
-    sexo = str(input('SEXO [F/M]: ')).upper()
+    sexo = str(input('SEXO [F/M]: ')).strip()
     acumulador_idade += idade
     if c == 1 and sexo in 'Mm':
         maior = idade
